@@ -1,38 +1,119 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #00AEEF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 .container {
-    text-align: center;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 600px;  /* Limiting max width for larger screens */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6a4dfd;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container select,
+.input-container input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 48%;  /* Flexible width for inputs */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Mobile specific styles using media queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
   }
-  
-  .converter {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+
+  .header {
+    font-size: 20px;  /* Smaller header size on mobile */
   }
-  
-  input,
-  select {
-    padding: 10px;
-    font-size: 16px;
+
+  .input-container {
+    flex-direction: column;  /* Stack inputs vertically on mobile */
+    align-items: stretch;  /* Stretch the input fields */
   }
-  
+
+  .input-container select,
+  .input-container input {
+    width: 100%;  /* Full width for inputs */
+    margin-bottom: 10px;  /* Space between inputs */
+  }
+
   button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+    padding: 14px 0;  /* Larger button padding on mobile */
+    font-size: 18px;  /* Larger text for buttons */
   }
-  
-  .convert-button {
-    background-color: #28a745;
-    color: white;
-    border-radius: 5px;
-  }
-  
+
   .result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 18px;  /* Smaller result font on mobile */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 18px;  /* Even smaller font for very small screens */
+  }
+
+  .input-container select,
+  .input-container input {
+    font-size: 14px;  /* Smaller input font size */
+  }
+
+  button {
+    padding: 14px;  /* Ensure buttons are still large enough */
+    font-size: 18px;
+  }
+
+  .result {
+    font-size: 16px;  /* Smaller result font size for small screens */
+  }
+}
