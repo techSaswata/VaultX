@@ -73,6 +73,11 @@ function App() {
 
       {/* Conditional rendering of the result */}
       {result && <div className="result">{result}</div>}
+
+      {/* Footer */}
+      <footer className="footer">
+        Made & Managed by <span className="highlight">techSaswata</span>
+      </footer>
     </div>
   );
 }
