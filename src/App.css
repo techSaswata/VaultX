@@ -71,12 +71,12 @@ button:hover {
 .footer {
   margin-top: 20px;
   font-size: 12px;
-  color: #dcdcdc;
+  color: #1e00ff; /* Change "Made and Managed" text to gray */
   text-align: center;
 }
 
 .footer .highlight {
-  color: #4CAF50;
+  color: #4CAF50; /* Change "techSaswata" to green */
   font-weight: bold;
 }
 
