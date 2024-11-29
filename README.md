@@ -14,7 +14,7 @@ VaultX is a sleek and intuitive currency converter app that helps you effortless
 - **ExchangeRate-API**
 - **HTML5 & CSS3**
 
-## Here's a gif the working app
+## Here's a gif of the working app
 ![20241129_202045](https://github.com/user-attachments/assets/18185ab0-daf9-4550-a5ac-f7d73d7cb226)
 
 
